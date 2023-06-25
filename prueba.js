@@ -1,23 +1,17 @@
-function multiplicarArgumentos() {
-   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto.
-   // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
-   // [PISTA]: "arguments" es un arreglo.
+function agregarPropiedad(objeto, propiedad) {
+   // Recibirás un objeto por parámetro.
+   // Debes agregarle una propiedad con el nombre recibido por parámetro.
+   // Esta propiedad será igual al valor `null`.
+   // Retornar el objeto.
    // Tu código:
-   
-   let resultado = 1;
-       for(let i =0 ; i < arguments.length ; i++){
-          resultado *= arguments[i]
-       }
-   if(arguments.length == 0){
-      resultado = 0;
-   }
-    
-   
-   console.log(resultado)
-   return resultado;
-   
-   
+  objeto[propiedad] = null;
+  return objeto;
 
 }
-var artg=[10,0.10]
-multiplicarArgumentos()
+
+let objeto={
+   nombre:"sebas",
+   saludo: "hola"
+
+}
+invocarMetodo(objeto, "saludo")
